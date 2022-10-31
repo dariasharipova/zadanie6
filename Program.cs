@@ -8,42 +8,51 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        // string predlojenie = Console.ReadLine();
-        // predlojenie = predlojenie.ToUpper();
-        // predlojenie = predlojenie.Replace("А","A");
-        // predlojenie = predlojenie.Replace("Б","B");
-        // predlojenie = predlojenie.Replace("В","V");
-        // predlojenie = predlojenie.Replace("Г","G");
-        // predlojenie = predlojenie.Replace("Д","D");
-        // predlojenie = predlojenie.Replace("Е","E");
-        // predlojenie = predlojenie.Replace("Ё","E");
-        // predlojenie = predlojenie.Replace("Ж","ZH");
-        // predlojenie = predlojenie.Replace("З","Z");
-        // predlojenie = predlojenie.Replace("И","I");
-        // predlojenie = predlojenie.Replace("Й","I");
-        // predlojenie = predlojenie.Replace("К","K");
-        // predlojenie = predlojenie.Replace("Л","L");
-        // predlojenie = predlojenie.Replace("М","M");
-        // predlojenie = predlojenie.Replace("Н","N");
-        // predlojenie = predlojenie.Replace("О","O");
-        // predlojenie = predlojenie.Replace("П","P");
-        // predlojenie = predlojenie.Replace("Р","R");
-        // predlojenie = predlojenie.Replace("С","S");
-        // predlojenie = predlojenie.Replace("Т","T");
-        // predlojenie = predlojenie.Replace("У","U");
-        // predlojenie = predlojenie.Replace("Ф","F");
-        // predlojenie = predlojenie.Replace("Х","KH");
-        // predlojenie = predlojenie.Replace("Ц","TS");
-        // predlojenie = predlojenie.Replace("Ч","CH");
-        // predlojenie = predlojenie.Replace("Ш","SH");
-        // predlojenie = predlojenie.Replace("Щ","SHCH");
-        // predlojenie = predlojenie.Replace("Ъ","IE");
-        // predlojenie = predlojenie.Replace("Ы","Y");
-        // predlojenie = predlojenie.Replace("Ь","");
-        // predlojenie = predlojenie.Replace("Э","E");
-        // predlojenie = predlojenie.Replace("Ю","IU");
-        // predlojenie = predlojenie.Replace("Я","IA");
-        // Console.WriteLine(predlojenie);
+        static string vvod()
+        {
+            string predlojenie = Console.ReadLine();
+            predlojenie = predlojenie.ToUpper();
+            return predlojenie;
+        }
+        static string zamena()
+        {
+            string perevod = vvod();
+            perevod = perevod.Replace("А","A");
+            perevod = perevod.Replace("Б","B");
+            perevod = perevod.Replace("В","V");
+            perevod = perevod.Replace("Г","G");
+            perevod = perevod.Replace("Д","D");
+            perevod = perevod.Replace("Е","E");
+            perevod = perevod.Replace("Ё","E");
+            perevod = perevod.Replace("Ж","ZH");
+            perevod = perevod.Replace("З","Z");
+            perevod = perevod.Replace("И","I");
+            perevod = perevod.Replace("Й","I");
+            perevod = perevod.Replace("К","K");
+            perevod = perevod.Replace("Л","L");
+            perevod = perevod.Replace("М","M");
+            perevod = perevod.Replace("Н","N");
+            perevod = perevod.Replace("О","O");
+            perevod = perevod.Replace("П","P");
+            perevod = perevod.Replace("Р","R");
+            perevod = perevod.Replace("С","S");
+            perevod = perevod.Replace("Т","T");
+            perevod = perevod.Replace("У","U");
+            perevod = perevod.Replace("Ф","F");
+            perevod = perevod.Replace("Х","KH");
+            perevod = perevod.Replace("Ц","TS");
+            perevod = perevod.Replace("Ч","CH");
+            perevod = perevod.Replace("Ш","SH");
+            perevod = perevod.Replace("Щ","SHCH");
+            perevod = perevod.Replace("Ъ","IE");
+            perevod = perevod.Replace("Ы","Y");
+            perevod = perevod.Replace("Ь","");
+            perevod = perevod.Replace("Э","E");
+            perevod = perevod.Replace("Ю","IU");
+            perevod = perevod.Replace("Я","IA");
+            return perevod;
+        }
+        Console.WriteLine(zamena());
 
         string slovo = "клавиатура";
         string podslovo = slovo.Substring(4);
